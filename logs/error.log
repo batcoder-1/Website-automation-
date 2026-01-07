@@ -1,2 +1,11 @@
-fatal: repository 'asdfasdf' does not exist
-Cloning into 'Weather-App'...
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+fatal: repository 'jhadsf' does not exist
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+fatal: repository 'jhjh' does not exist
+Cloning into 'To-Do-List'...
+Cloning into 'To-Do-List'...
+fatal: destination path 'To-Do-List' already exists and is not an empty directory.

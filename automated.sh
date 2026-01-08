@@ -5,7 +5,7 @@
 #Make sure before you run this script make it executable
 
 #Variables
-services=nginx
+services=("nginx" "nodejs")
 errorLog=./websetup/logs/error.log
 
 # Taking repo url from user
@@ -35,14 +35,15 @@ fi
 fi
 
 # Now checking for packages and dependencies needed to be installed in order to setup it locally
-
-systemctl list-units --type=service | grep "nginx" 2>> $errorLog 
+for service in "${services[@]}"
+do
+$service -v &> /dev/null
 if [ $? != 0 ] 
 then
 	echo "=============================================="
-	echo "Nginx service cannot be found.Installing it..................."
+	echo "$service service cannot be found.Installing it..................."
 	echo "=============================================="
-        sudo apt install nginx -y 2>> $errorLog 1> /dev/null
+        sudo apt install $service -y 2>> $errorLog 1> /dev/null
 	if [ $? != 0 ] 	
 	then
 		echo "======================================="
@@ -51,3 +52,4 @@ then
 		exit 1
 	fi
 fi
+done

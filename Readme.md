@@ -37,12 +37,12 @@ Your system should have:
 - `curl` installed
 
 ---
-#Run the script
+## Run the script
 
 ./websetup/automated.sh
 
 ---
-##Troubleshooting:
+## Troubleshooting:
 
   - issue: "404 Not Found"
     possible_causes:
@@ -90,15 +90,15 @@ Your system should have:
       - "Hard refresh the browser or clear site cache"
 
 ---
-##Logs
+## Logs
 
 - Logs are written to /websetup/logs/error.log
 ---
 
-##Notes
+## Notes
 - This script is intended for local setup and learning purposes.
 - For React + Vite projects, it automatically forces: base:'/' to avoid incorrect asset paths during Nginx deployment.
 ---
-##License
+## License
 - This project is for educational use.
 

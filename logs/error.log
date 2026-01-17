@@ -1,30 +1,6 @@
-
-WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
-
-fatal: repository 'jhadsf' does not exist
-
-WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
-
-fatal: repository 'jhjh' does not exist
+Cloning into 'Rock-Paper-Scissors-'...
 Cloning into 'To-Do-List'...
 Cloning into 'To-Do-List'...
-fatal: destination path 'To-Do-List' already exists and is not an empty directory.
+Cloning into 'To-Do-List'...
 Cloning into 'TIC-TAC-TOE'...
-Cloning into 'TIC-TAC-TOE'...
-Cloning into 'TIC-TAC-TOE'...
-
-WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
-
-
-WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
-
-E: Unable to locate package node
-
-WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
-
-fatal: repository 'kjgf' does not exist
-Cloning into 'Weather-App'...
-
-WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
-
-Cloning into 'Weather-App'...
+Cloning into 'To-Do-List'...

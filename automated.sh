@@ -76,7 +76,7 @@ then
 	echo "==========================================================="	
 	npm run build 2>> $errorLog 1> /dev/null
 	error_check
-	cd
+	cd ..
 fi
 if [ $isReact == true ]
 then

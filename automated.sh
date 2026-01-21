@@ -52,7 +52,7 @@ then
 	then
 		curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash 2>> $errorlog > /dev/null
 		\. "$HOME/.nvm/nvm.sh"
-		nvm install --lts 2>> $errorlog > /dev/null
+		nvm install --lts 2>> $errorLog > /dev/null
 	else 
 		sudo apt install $service -y 2>> $errorLog 1> /dev/null
 	fi

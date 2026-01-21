@@ -18,7 +18,7 @@ fi
 
 #Variables
 services=("nginx" "nodejs")
-scriptD=$(find /home -type d -name "websetup")
+scriptD=$(find /home -type d -name "Website-automation-")
 errorLog=$scriptD/logs/error.log
 isReact=false
 # Taking repo url from user
@@ -52,7 +52,7 @@ then
 	then
 		curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash 2>> $errorlog > /dev/null
 		\. "$HOME/.nvm/nvm.sh"
-		nvm install --lts 2>> $errorlog > /dev/null
+		nvm install --lts 2>> $errorLog > /dev/null
 	else 
 		sudo apt install $service -y 2>> $errorLog 1> /dev/null
 	fi
@@ -76,7 +76,7 @@ then
 	echo "==========================================================="	
 	npm run build 2>> $errorLog 1> /dev/null
 	error_check
-	cd
+	cd ..
 fi
 if [ $isReact == true ]
 then

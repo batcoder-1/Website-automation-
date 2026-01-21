@@ -25,10 +25,10 @@ echo "=================================================="
 #deleting it from /var/www/html and also its config file
 if [ "$isReact" = "true" ]
 then
-	sudo rm -rf /var/www/html/dist 
+	sudo rm -rf /var/www/html/* /etc/nginx/sites-available/site /etc/nginx/sites-enabled/site 2>> $error_file_location 
 	error_check
 else
-	sudo rm -rf /var/www/html/$repo_name /etc/nginx/sites-available/site /etc/nginx/sites-enabled/site 2>> $error_file_location
+	sudo rm -rf /var/www/html/* /etc/nginx/sites-available/site /etc/nginx/sites-enabled/site 2>> $error_file_location
 	error_check
 fi
 echo "=================================================="

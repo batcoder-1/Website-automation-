@@ -78,7 +78,7 @@ then
 	error_check
 	cd ..
 fi
-if [ $isReact == true ]
+if [ "$isReact" = "true" ]
 then
 	# copying project in /var/www/html
 	sudo cp -r $repo/dist /var/www/html
@@ -93,7 +93,7 @@ then
 
     	server_name example.com;
 
-    	root /var/www/html;
+    	root /var/www/html/dist;
     	index index.html;
 
     	location / {

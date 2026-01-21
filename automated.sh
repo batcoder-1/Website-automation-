@@ -93,7 +93,7 @@ then
 
     	server_name example.com;
 
-    	root /var/www/html;
+    	root /var/www/html/dist;
     	index index.html;
 
     	location / {
@@ -138,8 +138,8 @@ error_check
 #before executing storing important details in env for further use 
 
 cat > ./websetup/repo.env <<EOF
-repo_name="$repo"
-isReact="$isReact"
+repo_name=$repo
+isReact=$isReact
 EOF
 echo "=============================================================="
 echo "Site successfully depoyed locally you can check on localhost:80"

@@ -18,7 +18,7 @@ fi
 
 #Variables
 services=("nginx" "nodejs")
-scriptD=$(find /home -type d -name "websetup")
+scriptD=$(find /home -type d -name "Website-automation-")
 errorLog=$scriptD/logs/error.log
 isReact=false
 # Taking repo url from user

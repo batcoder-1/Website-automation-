@@ -116,7 +116,7 @@ else
 
     	server_name example.com;
 
-    	root /var/www/html;
+    	root /var/www/html/$repo;
     	index index.html;
 
     	location / {

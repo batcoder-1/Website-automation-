@@ -10,8 +10,9 @@ fi
 }
 
 #This script is to remove project from users current directory
-error_file_location=$(find /home -type f -name "error.log")
-script_location=$(find /home -type f -name "repo.env")
+project_location=$(find /home -type d -name "Website-automation-")
+error_file_location=$project_location/logs/error.log
+script_location=$project_location/repo.env
 source  $script_location
 #Removing the project from the users home directory
 location=$(find /home -type d -name $repo_name)
@@ -22,7 +23,7 @@ echo "=================================================="
 echo "Deleting the repo from home directory"
 echo "=================================================="
 #deleting it from /var/www/html and also its config file
-if [ $isReact == true ]
+if [ "$isReact" = "true" ]
 then
 	sudo rm -rf /var/www/html/dist 
 	error_check

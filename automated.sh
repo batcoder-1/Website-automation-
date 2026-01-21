@@ -116,7 +116,7 @@ else
 
     	server_name example.com;
 
-    	root /var/www/html/$repo;
+    	root /var/www/html;
     	index index.html;
 
     	location / {
@@ -137,7 +137,7 @@ error_check
 
 #before executing storing important details in env for further use 
 
-cat > ./websetup/repo.env <<EOF
+cat > ./Website-automation-/repo.env <<EOF
 repo_name="$repo"
 isReact="$isReact"
 EOF
